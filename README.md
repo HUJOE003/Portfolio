@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+Portfolio
+Welcome to my portfolio! This project showcases a collection of my work, including various projects and contributions I've made over time. Each project highlights different skills and technologies I've utilized, from game development to web design. Feel free to explore and learn more about each project through the links provided.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Overview
+Features
+Technologies
+Project Gallery
+Setup
+Contributing
+Contact
+Overview
+This portfolio application demonstrates my development work and personal projects. Built using React, it features a clean and responsive design, showcasing various projects and skills through interactive components.
 
-## Available Scripts
+Features
+Navbar: A responsive navigation bar to access different sections of the portfolio.
+Banner: An eye-catching introduction banner.
+Skills Section: Highlights the technologies and skills I have expertise in.
+Project Gallery: Displays a curated list of projects with descriptions and links.
+Testimonial Section: Showcases feedback from collaborators and clients.
+Contact Form: Allows visitors to get in touch with me directly.
+Footer: Contains additional information and links.
+Technologies
+React.js: A JavaScript library for building user interfaces.
+Tailwind CSS: A utility-first CSS framework for creating custom designs.
+JavaScript: The programming language used for interactive elements.
+HTML & CSS: Markup and styling for the webpage layout.
+Project Gallery
+Timber Tales
 
-In the project directory, you can run:
 
-### `npm start`
+Description: A game utilizing A* Search, DFS, BFS algorithms, and OOP concepts. Help a lumberjack navigate and manage tree felling and planting.
+Link: GitHub Repository
+GreenHouse Gas Emission
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Description: A project using object-oriented design to model and analyze global greenhouse gas emissions data.
+Link: GitHub Repository
+A* Pathing Strategy
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Description: Development of an A* Pathing Algorithm code.
+Link: GitHub Repository
+Huffman Coding
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Description: Implementation of Huffman Coding for data compression.
+Link: GitHub Repository
+DragoQuest BFS & DFS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Description: A 2D grid game that implements Breadth First Search and Depth First Search algorithms.
+Link: GitHub Repository
+Charger-Surfing
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Description: A project exploring power line side-channels for smartphone information leakage.
+Link: USENIX Security
+Astromech Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Description: Assisted in brainstorming ideas for building an interactive droid.
+Link: Cal Poly Robotics
+Tour Website
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Description: A tour website built with HTML, CSS, JavaScript, React.js, and Node.js.
+Link: GitHub Repository | Live Demo
+Ecommerce Website (WORK IN PROGRESS)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Description: Developing an ecommerce website for my brand "Animex" using HTML, CSS, JavaScript, React.js, and Node.js.
+Link: [Coming Soon]
+Setup
+To run this project locally, follow these steps:
 
-### Code Splitting
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/your-repo.git
+Navigate to the project directory:
+bash
+Copy code
+cd your-repo
+Install the dependencies:
+bash
+Copy code
+npm install
+Start the development server:
+bash
+Copy code
+npm start
+Open your browser and go to http://localhost:3000 to view the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributing
+Feel free to contribute to this project by submitting issues, suggesting features, or making pull requests. For more details, please refer to the CONTRIBUTING.md file.
 
-### Analyzing the Bundle Size
+Contact
+For any questions or inquiries, please reach out to me via:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: your.email@example.com
+LinkedIn: Your LinkedIn
+GitHub: Your GitHub
+This README should provide a comprehensive overview of your portfolio project and guide users through its features and setup. Let me know if there's anything else you'd like to add or adjust!
