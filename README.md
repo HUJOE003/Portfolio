@@ -33,20 +33,6 @@ This portfolio application demonstrates my development work and personal project
 - **JavaScript**: The programming language used for interactive elements.
 - **HTML & CSS**: Markup and styling for the webpage layout.
 
-## Projects
-
-### Complex Pandas
-
-A to-do list app designed to streamline productivity. This project uses npm for development and has a Prettier configuration similar to the Airbnb style guide.
-
-### AI Fitness Coach
-
-Combining fitness and technology, this project uses OpenAI Assistants, PlanetScale, Next.js 14, Tailwind CSS, and TypeScript to build an AI fitness coach.
-
-### OpenAI-powered Virtual Coach
-
-Featuring Rick from 'Rick & Morty,' this project increased user engagement by 25% with Prisma ORM optimizing database interactions and Upstash automating daily fitness reminders. Achieved a 30% reduction in query latency and a 20% boost in user retention over six months.
-
 ## Setup
 
 # Download and Deploy Instructions
