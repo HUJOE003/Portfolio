@@ -16,7 +16,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter"
 function Skills() {
 
   const [data] = useTypewriter({
-    words: ['Front-End (HTML, CSS, Javascript)', 'Back-End (MongoDB, Node.js)', 'Programming Languages(Python, Java, C)', 'GitHub'],
+    words: ['Front-End (HTML, CSS, Javascript)', 'Back-End  (Node.js)', 'Programming Languages(Python, Java, C)', 'GitHub', 'Tools: Git, OpenAI Assistants, Planet Scale, Supabase, AWS, Clerk, Vercel, Upstash, Figma, Photoshop'],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 100
@@ -32,8 +32,8 @@ function Skills() {
           skills</p>
 
 
-        <div className=" container d-flex justify-content-center flex-wrap  p-5" style={{ marginTop: " -60px" }}>
-          <div className="content" style={{ fontWeight: "700" }}>
+        <div className=" container d-flex justify-content-center flex-wrap  p-5" style={{ marginTop: " -60px"}}>
+          <div className="content" style={{ fontWeight: "700"}}>
 
 
             <div className="container">
@@ -51,8 +51,12 @@ function Skills() {
                 <span className="famesp ">MAKING THINGS FUN.</span>
               </button>
             </div>
-            <div className="skillsparagh" style={{ backgroundColor: "rgba(230,215,255, 0.424)", padding: "15px", marginTop: "20px", color: "rgb(0, 0, 0)", fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sansSerif", borderTopRightRadius: " 17%", borderBottomLeftRadius: " 15%" ,fontSize:"15px",fontWeight: "500"}}>
-              I am <span data-aos="zoom-in" style={{ fontSize: "18px", fontWeight: "500" }}>Hujoe</span> a skilled and versatile individual with a strong foundation in web development and programming. Being Proficient in <span style={{ fontSize: "18px", fontWeight: "500" }}>HTML, CSS and Javascript</span> I excel at creating visually appealing and user-friendly websites that engage and captivate audiences. My expertise extends to version control using <span style={{ fontSize: "18px", fontWeight: "500" }}>GitHub</span>, allowing for efficient collaboration and code management. With a deep understanding of<span style={{ fontSize: "18px", fontWeight: "500" }}> Java, Python, C, Noje.js, React.js and MongoDB</span>, I possess the capability to develop robust and dynamic applications that cater to various needs. Additionally I am also proficient in frameworks such as <span style={{ fontSize: "18px", fontWeight: "500" }}>Bootsrap5 and Tailwind</span>. Good in cybersecurity and have experience with the <span style={{ fontSize: "18px", fontWeight: "500" }}>Splunk</span> platform! & <span style={{ fontSize: "18px", fontWeight: "500" }}>Linux</span>
+            <div className="skillsparagh" style={{ backgroundColor: "rgba(230,215,255, 0.424)", padding: "15px", marginTop: "20px", color: "rgb(0, 0, 0)", fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sansSerif" ,fontSize:"20px",fontWeight: "500"}}>
+            <span style={{fontWeight: "bold"}}>TECHNICAL SKILLS:<br></br></span>
+            <br />
+            <span style={{fontWeight: "bold"}}>Languages:</span> Java, Python, C, C++, SQL, JavaScript, HTML/CSS, ARM Assembly<br></br>
+            <span style={{fontWeight: "bold"}}>Frameworks:</span> React.js, Next.js, Node.js, Express.js, Angular.js, .NET, Bootstrap, Tailwind, WordPress Developer<br></br>
+             <span style={{fontWeight: "bold"}}>Tools: </span>Git, OpenAI Assistants, Planet Scale, Supabase, AWS, Clerk, Vercel, Upstash, Figma, Photoshop
             </div>
             <br></br>
           </div>
@@ -60,7 +64,7 @@ function Skills() {
 
 
 
-          <table className="text-center p-2">
+          {/* <table className="text-center p-2">
             <tbody>
               <tr>
                 <td> <img src={logo1} width="95vw" alt="pic" /></td>
@@ -155,7 +159,7 @@ function Skills() {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
         </div>
       </section>
 
