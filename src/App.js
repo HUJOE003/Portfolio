@@ -22,6 +22,11 @@ function App() {
    <ProjectCard title="AI-Fitness-Coach" image="https://i.pinimg.com/originals/83/86/4b/83864b80969710388f357fc57b714240.jpg" projecttext="Developed an AI-powered virtual fitness coach, modeled after Rick from Rick & Morty, integrated into a mobile/desktop-friendly web application. The assistant is designed to enhance user motivation and ensure consistent workout attendance." link="https://github.com/HUJOE003/Exercise-AI-Coach"/>
    <ProjectCard title="Online-Chat-App" image="https://static.vecteezy.com/system/resources/previews/014/664/394/non_2x/chat-bot-symbol-and-logo-icon-vector.jpg" projecttext="Designed and implemented a modern Online Chat Website that enabled users to be connected to their peers with seamless communication and real time messaging."link="https://github.com/HUJOE003/Online-Chat-App"/>
    <ProjectCard title="Action Planner" image="https://static.vecteezy.com/system/resources/previews/021/040/389/non_2x/to-do-list-icon-vector.jpg" projecttext="Collaborated in a sprint-based team to develop a productivity app." link="https://github.com/SahilGoel05/COMPLEX_PANDAS"/>
+   <ProjectCard title="Sustainable Land Initiative" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bheZkt8D3a_jSIa9XoR5VV1nJe7GPdducQ&s" projecttext="Project with CalPoly Department under professors Dr.Michael Huangs and Dr.Erin Pearse" link="https://github.com/mhaungs/farmshare"/>
+    <ProjectCard title="AI Age & Gender Detector" image="https://www.willbhurd.com/wp-content/uploads/2023/01/DALL%C2%B7E-2024-01-07-08.01.49-An-eye-catching-and-informative-lead-image-for-a-blog-about-artificial-intelligence-for-beginners.-The-image-should-visually-represent-the-concept-of-.png" projecttext="CNN-based model using TensorFlow and Keras to detect age and gender from facial images, with efficient preprocessing via
+OpenCV"link="https://github.com/HUJOE003/AI-Gender-Age-Predictor" />
+
+
    {/* <ProjectCard title="Huffman Coding" image="https://www.huffmancoding.com/wp-content/uploads/2012/02/coding5.png" projecttext="Project on Huffman Coding" link="https://github.com/Hujoe-Pandi-Selvan/Huffman-Coding"/> */}
    {/* <ProjectCard title="DragoQuest BFS & DFS" image="https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Dragon_Quest_1_Remake_screenshot.png/220px-Dragon_Quest_1_Remake_screenshot.png" projecttext="This project utilizes a 2D grid structure with a dragon to implement both Breadth First
             Search and Depth First Search."link="https://github.com/Hujoe-Pandi-Selvan/DragoQuest-BFS-DFS"/> */}
@@ -30,7 +35,7 @@ function App() {
    
    </div>
    </section>
-   <Testimonial/>
+   {/* <Testimonial/> */}
    <Contact/>
    <Footer/>
    </>
