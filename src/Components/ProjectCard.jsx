@@ -1,76 +1,85 @@
-function ProjectCard(props) {
+import React from 'react';
+
+function ProjectCard({ title, projecttext, link }) {
   return (
-    <section className="Projects" id="projects">
+    <div className="github-card">
       <style jsx>{`
-        .project-card {
-          width: 18rem;
-          background: linear-gradient(135deg, #AAA2FE, #7B5CFA);
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-        .project-img {
-          height: 30vh;
+        .github-card {
+          background-color: #f6f8fa;
+          border: 1px solid #d0d7de;
+          border-radius: 8px;
+          box-shadow: 0 1px 3px rgba(27, 31, 35, 0.1);
           width: 100%;
-          object-fit: cover;
+          max-width: 350px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .card-body {
-          padding: 1.5rem;
+
+        .github-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 4px 12px rgba(27, 31, 35, 0.15);
         }
+
         .card-title {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 1.4rem;
-          font-weight: 800;
-          color: #fff;
-          margin-bottom: 0.8rem;
-        }
-        .card-text {
-          font-family: 'Roboto', sans-serif;
-          font-size: 1rem;
+          font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+          font-size: 1.15rem;
           font-weight: 600;
-          color: #f9f9f9;
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-          margin-bottom: 1rem;
+          color: #0969da;
+          margin: 0;
         }
-        .project-btn {
-          display: inline-block;
-          font-size: 1rem;
-          font-weight: 700;
-          padding: 0.6rem 1.2rem;
-          background-color: #5a42d1;
-          color: #fff;
+
+        .card-text {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 0.95rem;
+          color: #24292f;
+          line-height: 1.4;
+        }
+
+        .project-link {
+          align-self: flex-start;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #57606a;
+          background-color: #eaeef2;
+          padding: 6px 12px;
           border-radius: 6px;
-          text-transform: uppercase;
-          transition: background 0.3s ease, transform 0.2s ease;
-          text-align: center;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          text-decoration: none;
+          transition: background-color 0.2s ease;
         }
-        .project-btn:hover {
-          background-color: #4a37b8;
-          color:orange;
-          transform: scale(1.05);
+
+        .project-link:hover {
+          background-color: #d8dee4;
+        }
+
+        .github-icon {
+          width: 16px;
+          height: 16px;
+          filter: grayscale(100%);
         }
       `}</style>
-      <div className="card m-2 project-card">
-        <img src={props.image} className="card-img-top project-img" alt="Project" />
-        <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.projecttext}</p>
-          <a
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn project-btn"
-          >
-            View Project
-          </a>
-        </div>
-      </div>
-    </section>
+
+      <h3 className="card-title">{title}</h3>
+      <p className="card-text">{projecttext}</p>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+          alt="GitHub"
+          className="github-icon"
+        />
+        View on GitHub
+      </a>
+    </div>
   );
 }
 

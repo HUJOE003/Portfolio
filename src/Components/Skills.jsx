@@ -1,52 +1,141 @@
 import React from 'react';
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
+import '../App.css';
 
 function Skills() {
   const [data] = useTypewriter({
     words: [
-      'Front-End (HTML, CSS, Javascript)',
-      'Back-End (Node.js)',
-      'Programming Languages (Python, Java, C)',
-      'GitHub',
-      'Tools: Git, OpenAI Assistants, Planet Scale, Supabase, AWS, Clerk, Vercel, Upstash, Figma, Photoshop'
+      'Full‑Stack Engineering',
+      'Cloud Architecture',
+      'AI/ML Systems',
+      'CI/CD + IaC',
+      'Modern Databases',
     ],
-    loop: {},
-    typeSpeed: 120,
-    deleteSpeed: 100
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 80,
   });
 
   return (
-    <section className="skills" id="skills">
-      <div className="skills-header">
-        <h2 className="section-title">What I Do</h2>
-        <h3 className="section-subtitle">Skills & Certifications</h3>
-      </div>
-      <div className="skills-content container">
-        <div className="skill-text">
-          <h2 className="proficiency-text">
-            I'm Proficient in
-            <span className="highlight">{data}</span>
-            <Cursor cursorColor="#000" />
-          </h2>
-          <button className="btn-fun">
-            I ENJOY <span className="btn-fun-highlight">MAKING THINGS FUN.</span>
-          </button>
-          <div className="skills-description">
-            <h4 className="description-title">CERTIFICATIONS:</h4>
-            <p className="description-text">
-              Salesforce AI Specialist Certification – Salesforce (Jan 2025)<br />
-              Salesforce AI Associate Certification – Salesforce (Dec 2024)<br />
-              Career Essentials in Generative AI – Microsoft & LinkedIn (Nov 2024)
-            </p>
-            <h4 className="description-title" style={{ marginTop: '20px' }}>TECHNICAL SKILLS:</h4>
-            <p className="description-text">
-              <strong>Languages:</strong> Java, Python, C, C++, SQL, JavaScript, TypeScript, HTML/CSS, ARM Assembly<br />
-              <strong>Frameworks:</strong> TensorFlow, PyTorch, Keras, OpenCV, Hugging Face, React.js, Next.js, Angular.js, Bootstrap, Tailwind CSS, WordPress, Node.js, Express.js, Flask, FastAPI, .NET, Apache Spark, Pandas, NumPy<br />
-              <strong>Developer Tools:</strong> AWS, Kubernetes, Docker, Jupyter Notebooks, OpenAI APIs, GCP, PostgreSQL, MongoDB, Redis, Azure, Git, Supabase, PlanetScale, Vercel, Tableau
-            </p>
-          </div>
-        </div>
-      </div>
+    <section className="skills-section" id="skills">
+      <motion.div
+        className="skills-header"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="section-title">Professional Focus</h2>
+        <p className="section-subtitle">Technical Expertise & Certifications</p>
+      </motion.div>
+
+      <motion.div
+        className="skills-content"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden:   { opacity: 0 },
+          visible: { opacity: 1, transition: { staggerChildren: 0.2, duration: 1 } }
+        }}
+      >
+        <motion.div className="typewriter" variants={{ hidden: { x: -20 }, visible: { x: 0 } }}>
+          <span>Areas of Expertise:&nbsp;</span>
+          <span className="highlight">{data}</span>
+          <Cursor cursorColor="var(--accent)" />
+        </motion.div>
+
+        <motion.div className="block" variants={{ hidden: { y: 20 }, visible: { y: 0 } }}>
+          <h4>Certifications</h4>
+          <ul>
+            <li>Salesforce AI Specialist (Jan 2025)</li>
+            <li>Salesforce AI Associate (Dec 2024)</li>
+            <li>Generative AI Essentials — Microsoft & LinkedIn (Nov 2024)</li>
+          </ul>
+        </motion.div>
+
+        <motion.div className="block" variants={{ hidden: { y: 20 }, visible: { y: 0 } }}>
+          <h4>Technical Skills</h4>
+          <p>
+            <strong>Langs:</strong> Java · Python · C/C++ · JS/TS · SQL · HTML/CSS<br/>
+            <strong>Frameworks:</strong> React · Next.js · Node · Flask · FastAPI · TensorFlow · PyTorch<br/>
+            <strong>Cloud / DevOps:</strong> AWS · Docker · K8s · Terraform · GitHub Actions · Vercel<br/>
+            <strong>DBs:</strong> PostgreSQL · Supabase · PlanetScale · Redis · MongoDB
+          </p>
+        </motion.div>
+
+        <motion.div className="block" variants={{ hidden: { y: 20 }, visible: { y: 0 } }}>
+          <h4>Project Highlights</h4>
+          <ul>
+            <li>Scalable reservation system with Docker, AWS ECS & CI/CD pipelines</li>
+            <li>Real‑time AI motion tracking (PyTorch + YOLOv5 → 93% @ 45 FPS)</li>
+            <li>OpenAI‑powered chatbot reducing support volume for CalFresh</li>
+            <li>Terraform + Supabase infra for zero‑downtime deployments</li>
+            <li>Gamified AI fitness coach with persistent memory</li>
+          </ul>
+        </motion.div>
+      </motion.div>
+
+      <style jsx>{`
+        .skills-section {
+          background: var(--bg);
+          color: var(--text-primary);
+          padding: var(--section-gap) 2rem;
+        }
+        .skills-header {
+          text-align: left;
+          margin-left: 9%;
+          margin-bottom: 2rem;
+        }
+
+        .skills-content {
+          max-width: 900px;
+          margin-left: 9%;
+          margin-right: auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          text-align: left;
+        }
+        .typewriter {
+          font-size: 1.25rem;
+          margin-bottom: 1.5rem;
+          text-align: left;
+        }
+        .highlight {
+          color: var(--accent);
+          border-bottom: 1px dashed var(--accent);
+        }
+        .block {
+          background: #ffffff;
+          border-radius: 8px;
+          padding: 1.5rem;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+          text-align: left;
+        }
+        .block h4 {
+          font-size: 1.2rem;
+          margin-bottom: 0.75rem;
+          color: var(--accent);
+        }
+        .block ul,
+        .block p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          text-align: left;
+          color: grey;
+        }
+        .block ul li {
+          margin-bottom: 0.5rem;
+        }
+        @media (min-width: 768px) {
+          .skills-content {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .typewriter {
+            grid-column: 1 / -1;
+          }
+        }
+      `}</style>
     </section>
   );
 }

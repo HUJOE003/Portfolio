@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.aa9c9c34.css",
-    "main.js": "/Portfolio/static/js/main.a7a2b1ee.js",
+    "main.css": "/Portfolio/static/css/main.2918bf87.css",
+    "main.js": "/Portfolio/static/js/main.bd88380e.js",
     "static/js/787.9e89b8c0.chunk.js": "/Portfolio/static/js/787.9e89b8c0.chunk.js",
     "static/media/Subject 2.png": "/Portfolio/static/media/Subject 2.c6111f938ca0bf3afbc0.png",
     "static/media/resumepic.jpg": "/Portfolio/static/media/resumepic.c75f5e6fcc870d34662c.jpg",
@@ -11,15 +11,14 @@
     "static/media/delaneycook.jpeg": "/Portfolio/static/media/delaneycook.7d5a4983a63e60441d4e.jpeg",
     "static/media/logoname2.jpg": "/Portfolio/static/media/logoname2.dd7bc5887d21a349b9b7.jpg",
     "static/media/alex.jpeg": "/Portfolio/static/media/alex.42f3a0128bef3eae3cba.jpeg",
-    "static/media/Splunk-Logo.jpg": "/Portfolio/static/media/Splunk-Logo.dad284dea027b9793d6f.jpg",
     "static/media/1.png": "/Portfolio/static/media/1.26286635e2521f2026f2.png",
     "index.html": "/Portfolio/index.html",
-    "main.aa9c9c34.css.map": "/Portfolio/static/css/main.aa9c9c34.css.map",
-    "main.a7a2b1ee.js.map": "/Portfolio/static/js/main.a7a2b1ee.js.map",
+    "main.2918bf87.css.map": "/Portfolio/static/css/main.2918bf87.css.map",
+    "main.bd88380e.js.map": "/Portfolio/static/js/main.bd88380e.js.map",
     "787.9e89b8c0.chunk.js.map": "/Portfolio/static/js/787.9e89b8c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa9c9c34.css",
-    "static/js/main.a7a2b1ee.js"
+    "static/css/main.2918bf87.css",
+    "static/js/main.bd88380e.js"
   ]
 }

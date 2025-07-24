@@ -1,29 +1,49 @@
-function Footer(){
-    return(
-        <>
-        <hr style={{height:"2px",borderWidth:"1px",color:"gray",backgroundColor:"gray"}}></hr>
-        <section class="Footer" id="Footer">
+import React from 'react';
 
-    <div class="container d-flex justify-content-center">
-      <a class="m-3 icon4"href="https://github.com/HUJOE003"target="_blank"><i class="bi bi-github"></i></a>
-      <a class="m-3 icon5"href="https://www.linkedin.com/in/hujoe-pandi-selvan-5509a125a/"target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a class="m-3 icon6"href="tel:+8053169809"target="_blank"><i class="bi bi-telephone"></i></a>
-      <a class="m-3 icon" href="https://wa.me/+18053169809 "target="_blank"><i class="bi bi-whatsapp"></i></a>
-      
-      
-    </div>
-    <div class="text2">
-      <p>Copyright &copy; 2023 designed by Hujoe Pandi Selvan</p>
-    </div>
+function Footer() {
+  return (
+    
+    <footer className="footer-section" style={{ marginBottom: '-5%' }}>
+            <hr
+        style={{
+          height: "2px",
+          borderWidth: "0",
+          backgroundColor: "gray",
 
-  </section>
-        
-        
-        
-        
-        
-        
-        </>
-    )
+        }}
+      />
+      <div className="social-icons d-flex justify-content-center">
+        <a
+          href="https://github.com/HUJOE003"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-3 icon4"
+        >
+          <i className="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hujoe-pandi-selvan-5509a125a/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-3 icon5"
+        >
+          <i className="bi bi-linkedin"></i>
+        </a>
+        <a href="tel:+8053169809" className="mx-3 icon6">
+          <i className="bi bi-telephone"></i>
+        </a>
+        {/* <a
+          href="https://wa.me/18053169809"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-3 icon"
+        >
+          <i className="bi bi-whatsapp"></i>
+        </a> */}
+      </div>
+      <p className="footer-text" style={{marginBottom: '-5%'}}>&copy; {new Date().getFullYear()} designed by Hujoe Pandi Selvan</p>
+    </footer>
+  );
 }
-export default Footer; 
+
+export default Footer;
