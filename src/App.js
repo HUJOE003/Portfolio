@@ -23,7 +23,7 @@ function App() {
           marginBottom: "-2rem",
         }}
       />
-      <section id="projects">
+      <section id="projects" style={{ marginLeft: "9%" }}>
         <div className="container">
           <h2 className="section-title">Portfolio</h2>
           <h3 className="section-subtitle">Projects I Have Done</h3>
